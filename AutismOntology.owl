@@ -1,0 +1,2502 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cbmi.med.harvard.edu/asdphenotype#"
+     xml:base="http://cbmi.med.harvard.edu/asdphenotype"
+     xmlns:asd="http://cbmi.med.harvard.edu/asdphenotype#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="http://cbmi.med.harvard.edu/asdphenotype"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#question_id -->
+
+    <owl:AnnotationProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#question_id"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasCognitiveAbility -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasCognitiveAbility"/>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasColor">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_757"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasEmotionalAssociation -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasEmotionalAssociation">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasEmotionalTraits"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_160"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_245"/>
+        <rdfs:comment>Associates an emotion with an object.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasEmotionalTraits -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasEmotionalTraits"/>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasExecutingFunction -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasExecutingFunction">
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:comment>Specifies the level of distraction an object presents.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasInteractionType -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasInteractionType">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasMotorSkills"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_32"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_753"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type"/>
+        <rdfs:comment>Specifies the type of interaction allowed for a particular instance of Motor Skill.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasMotorSkills -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasMotorSkills"/>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasPattern -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasPattern">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_161"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasRestrictedInterests -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasRestrictedInterests">
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_6"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasShape">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_226"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Shape"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasSize -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasSize">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_756"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Size"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasTexture -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasTexture">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_57"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Texture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasTheme -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasTheme">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasRestrictedInterests"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_328"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_6"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Themes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#hasVisualPerception">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_755"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#isCorrectAnswer -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#isCorrectAnswer">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasCognitiveAbility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_8"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Indicates whether an object represents the correct answer to a given problem.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#isDistractionLevel -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#isDistractionLevel">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasExecutingFunction"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_270"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_92"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#isDistractor -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#isDistractor">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasExecutingFunction"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_531"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Indicates if something is a distractor, relating it to the concept of Response Inhibition.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#isInteractive -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#isInteractive">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasMotorSkills"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_753"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Indicates whether the Motor Skill instance allows for interaction.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#isNumericalValue -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#isNumericalValue">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasCognitiveAbility"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Assigns a numerical value to an object for counting and arithmetic.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#requiredPrecision -->
+
+    <owl:ObjectProperty rdf:about="http://cbmi.med.harvard.edu/asdphenotype#requiredPrecision">
+        <rdfs:subPropertyOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#hasMotorSkills"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_753"/>
+        <rdfs:range rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_1 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_1">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_8"/>
+        <rdfs:label>Problem Solving Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0033211"/>
+        <skos:definition>Finding solutions to questions or situations by identifying and analyzing issues, developing options and solutions, evaluating potential effects of solutions, and executing a chosen solution.  </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_104 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_104">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_174"/>
+        <rdfs:label>Poor Eating Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0015745"/>
+        <skos:definition>Behavior related to feeding which negatively affects the quality or amount of food eaten and digested.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_11 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_11">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:label>Abstract Thinking</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d163"/>
+        <skos:definition>The conceptual process of creating ideas and generalizations that are distinct from concrete realities, specific objects, or actual instances.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_110 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_110">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_162"/>
+        <rdfs:label>Impulse Control and Regulation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1304"/>
+        <skos:definition>Mental functions that regulate and resist sudden intense urges to do something.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_116 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_116">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_168"/>
+        <rdfs:label>Motor Perseveration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b7653"/>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D019956"/>
+        <skos:definition>Persistent repetition of a response to stimuli.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_119 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_119">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_96"/>
+        <rdfs:label>Anger Control</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0002957"/>
+        <skos:definition>The ability to control and appropriately manage a strong emotional feeling of displeasure aroused by being interfered with, injured or threatened.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_121 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_121">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_96"/>
+        <rdfs:label>Emotional Outbursts</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0679475"/>
+        <skos:definition>An extreme, violent display of emotion, often in response to frustration, including temper tantrums.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_123 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_123">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_235"/>
+        <rdfs:label>Unusual Sensory Interests</rdfs:label>
+        <skos:definition>Atypical degree of interest in sensory stimuli, such as flashing lights, textures, or sounds.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_125 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_125">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_6"/>
+        <rdfs:label>Reaction to Unexpected Change</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2500"/>
+        <skos:definition>Response to changes in situations or surroundings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_126 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_126">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_110"/>
+        <rdfs:label>Immoderate Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7202"/>
+        <skos:definition>The inability to control and appropriately manage intensity of behavior, including excessive silliness, laughing, and loudness.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_132 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_132">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_160"/>
+        <rdfs:label>Self Concept</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D012649"/>
+        <skos:definition>A person&apos;s view of himself, including confidence in one&apos;s personal traits and abilities.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_134 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_134">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_60"/>
+        <rdfs:label>Eye Contact</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0870532"/>
+        <skos:definition>Meeting the eyes of another individual in an effort to communicate or in response to communication by the other individual, and integrating eye contact with verbal interaction, including looking at the individual speaking or being addressed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_140 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_140">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_160"/>
+        <rdfs:label>Affect</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d3350"/>
+        <skos:definition>Conveying meaning by movements of the body, such as facial gestures, arm and hand movements, and postures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_145 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_145">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_42"/>
+        <rdfs:label>Destructive Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233520"/>
+        <skos:definition>Intentionally damaging one&apos;s own or others&apos; belongings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_146 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_146">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_42"/>
+        <rdfs:label>Intentional Cruelty</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233515"/>
+        <skos:definition>Deliberately taking actions that cause physical or psychological pain for others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_149 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_149">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_250"/>
+        <rdfs:label>Poor Treatment by Others in Social Settings</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0730514"/>
+        <skos:definition>Being treated poorly by others in public, such as being frequently laughed at, made fun of, or bullied.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_15 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_15">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_66"/>
+        <rdfs:label>Conversational Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0871703"/>
+        <skos:definition>Abilities needed to start, sustain and end an interchange of thoughts and ideas, carried out by means of spoken, written, sign or other forms of language, with one or more people one knows or who are strangers, in formal or casual settings. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_152 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_152">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_301"/>
+        <rdfs:label>Personal Traits</rdfs:label>
+        <skos:definition>The distinguishing qualities, or characteristics, belonging to an individual. The qualities that have been shown to be important for the autism spectrum disorder phenotype include, for example, language and other cognitive abilities, restricted, repetitive and stereotyped behaviors, aspects of executive functioning, and a range of emotional traits.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_153 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_153">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_301"/>
+        <rdfs:label>Social Competence</rdfs:label>
+        <skos:definition>The ability to function in social situations. Children and adults with autism spectrum disorder demonstrate some delays, deficits, or atypical characteristics in the frequency, type, and quality of social interactions and social relationships with other individuals. Research suggests that differences in social development characterize children with autism spectrum disorder from the earliest months, and that delays, deficits, or atypical characteristics in this domain may be a &quot;core feature&quot; of autism spectrum disorder.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_155 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_155">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_152"/>
+        <rdfs:label>Executive Function</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D056344"/>
+        <skos:definition>A set of cognitive functions that controls complex, goal-directed thought and behavior. Executive function involves multiple domains, such as concept formation, goal management, cognitive flexibility, inhibition control, impulse control, and working memory.  Executive function in autism spectrum disorder is a subject of continuing research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_156 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_156">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_152"/>
+        <rdfs:label>Language Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d3"/>
+        <skos:definition>The ability to use and comprehend the complex system of human communication. Individuals with autism spectrum disorder often have a range of receptive and expressive language impairments. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_158 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_158">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_152"/>
+        <rdfs:label>Cognitive Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0392334"/>
+        <skos:definition>General mental function required to understand and integrate the various mental functions, including all cognitive functions and their development over the life span.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_160 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_160">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_152"/>
+        <rdfs:label>Emotional Traits</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233451"/>
+        <skos:definition>The characteristics of a person&apos;s emotional makeup. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_161 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_161">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_755"/>
+        <rdfs:label>Pattern Recognition and Rendering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D010364"/>
+        <skos:definition>The analysis of a critical number of sensory stimuli or facts (the pattern) by processes such as vision, touch, or hearing, and the ability to produce patterns through drawing and other means.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_162 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_162">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:label>Emotional Regulation and Control</rdfs:label>
+        <skos:definition>Directing or governing one`s own emotions. Individuals with autism spectrum disorder can react negatively to their environment and at times may engage in emotional outbursts. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_164 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_164">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_165"/>
+        <rdfs:label>Numeracy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d150"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d172"/>
+        <skos:definition>Skill with numbers and mathematics, such as counting, ordering sequences, and telling time.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_165 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_165">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:label>Analytic Capability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d175"/>
+        <skos:definition>Skill in reasoning, including problem solving and numeracy.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_166 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_166">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_152"/>
+        <rdfs:label>Stereotyped, Restricted, and Repetitive Behavior</rdfs:label>
+        <skos:definition>Behaviors, interests, movements, or vocalizations that are repetitive and lack clear function and purpose.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_168 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_168">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_166"/>
+        <rdfs:label>Involuntary Behaviors</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b765"/>
+        <skos:definition>Non-intentional, non-purposive behaviors, including perseveration, habitual repeated movements, and extreme sensitivity to stimuli.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_17 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_17">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_189"/>
+        <rdfs:label>Language Development</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D007804"/>
+        <skos:definition>The gradual expansion in complexity and meaning of symbols and sounds as perceived and interpreted by the individual through a maturational and learning process. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_170 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_170">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_49"/>
+        <rdfs:label>Maintenance and Organization of Possessions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d650"/>
+        <skos:definition>Arranging one&apos;s own possessions, including returning possessions to proper arrangement after use and finding possessions when needed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_173 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_173">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_529"/>
+        <rdfs:label>Transitioning Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1401"/>
+        <skos:definition>The ability to shift attention from one activity or focus to another when required to do so.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_174 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_174">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_49"/>
+        <rdfs:label>Self-Care</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d5"/>
+        <skos:definition>Caring for oneself, including washing and drying oneself, caring for one&apos;s body and body parts, proper use of the bathroom as needed, dressing, eating and drinking.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_176 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_176">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Receptive Language</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d310"/>
+        <skos:definition>The ability to understand language.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_177 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_177">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Expressive Language</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d330"/>
+        <skos:definition>The ability to produce and use language in an accurate and meaningful way.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_18 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_18">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Integrated Verbal and NonVerbal Communication</rdfs:label>
+        <skos:definition>Matching non-verbal communication, such as gestures and facial expressions, with meaning conveyed through verbal communication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_183 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_183">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_293"/>
+        <rdfs:label>Task Completion</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2104"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2105"/>
+        <skos:definition>Finishing a task.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_184 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_184">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_293"/>
+        <rdfs:label>Task Initiation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2101"/>
+        <skos:definition>Preparing and arranging the time and space for performance of a task with one or more components and undertaking execution of the task.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_185 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_185">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_85"/>
+        <rdfs:label>Initiating Social Interaction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d71040"/>
+        <skos:definition>Starting interactions with others, including introducing oneself and actively trying to make friends.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_187 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_187">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_60"/>
+        <rdfs:label>Relating to Others</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7200"/>
+        <skos:definition>Beginning and maintaining interactions with others for a short or long period of time, in a contextually and socially appropriate manner.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_188 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_188">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_253"/>
+        <rdfs:label>Ability to Convey Appropriate Level of Detail</rdfs:label>
+        <skos:definition>The ability to recognize and express the appropriate amount of information required during conversation on a given topic, such as sharing details that will interest another without including unnecessary information.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_189 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_189">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Development or Regression of Language Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0023013"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1843016"/>
+        <skos:definition>The acquisition or loss of the ability to communicate using language.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_19 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_19">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_287"/>
+        <rdfs:label>Awareness of Social and Personal Space</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7204"/>
+        <skos:definition>Being aware of and maintaining a distance between oneself and others that is contextually, socially and culturally appropriate.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_192 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_192">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_229"/>
+        <rdfs:label>Skill in Understanding Non-Literal Meaning</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0870558"/>
+        <skos:definition>The ability to recognize and comprehend figurative and metaphorical meanings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_2 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_2">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:label>Isolated Cognitive Skills</rdfs:label>
+        <skos:definition>Showing extreme proficiency in certain areas with special abilities, for example, in memory, music, drawing, reading and computational skills.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_20 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_20">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Reading and Writing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d345"/>
+        <skos:definition>Performing activities involved in the comprehension and production of written language for the purpose of obtaining general knowledge or specific information.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_200 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_200">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_532"/>
+        <rdfs:label>Performance of Chores</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d640"/>
+        <skos:definition>Doing housework such as cleaning the house, tidying rooms, washing clothes, storing food and disposing of garbage.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_201 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_201">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_293"/>
+        <rdfs:label>Quality of Performed Task</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0557391"/>
+        <skos:definition>The degree of excellence with which a task is performed.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_207 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_207">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_42"/>
+        <rdfs:label>Disobedience</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0424347"/>
+        <skos:definition>Intentionally violating rules, commands or prohibitions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_210 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_210">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_42"/>
+        <rdfs:label>Lack of Appropriate Guilt</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0018379"/>
+        <skos:definition>Absence of subjective feeling that one has transgressed a moral, social or ethical principle. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_218 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_218">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_110"/>
+        <rdfs:label>Impatience</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0564566"/>
+        <skos:definition>The inability to wait calmly without feelings of agitation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_219 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_219">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_110"/>
+        <rdfs:label>Acting Before Thinking</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D007175"/>
+        <skos:definition>Taking action before considering the consequences or impact of such action.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_22 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_22">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Idiosyncratic and Routinized Speech</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D004454"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233647"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0392185"/>
+        <skos:definition>Unusual speech, including formulaic speech, overreliance on a restricted range of expressions, echolalia, and idiosyncratic sound-meaning associations.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_226 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_226">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_755"/>
+        <rdfs:label>Form Perception</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D005556"/>
+        <skos:definition>The sensory discrimination of a pattern shape or outline.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_229 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_229">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_15"/>
+        <rdfs:label>Understanding Context</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0566112"/>
+        <skos:definition>The ability to recognize the communication situation, including the mood, opinions and comprehension level of other participants, and to modify one&apos;s language and responses accordingly.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_230 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_230">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_229"/>
+        <rdfs:label>Skill in Understanding Humor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0566220"/>
+        <skos:definition>The ability to recognize and enjoy humorous statements, including jokes, irony, and sarcasm.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_231 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_231">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_47"/>
+        <rdfs:label>Insistence on Routine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0424246"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1976715"/>
+        <skos:definition>Insistence on a specific sequence of ordered events and actions and intolerance of deviation from such routines.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_233 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_233">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_47"/>
+        <rdfs:label>Repetitive Actions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1827547"/>
+        <skos:definition>Performing the same action repeatedly.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_235 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_235">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_6"/>
+        <rdfs:label>Restricted and Unusual Interests</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2675334"/>
+        <skos:definition>Atypical or highly limited interest in specific objects or topics.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_239 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_239">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_47"/>
+        <rdfs:label>Insistence on Order</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233850"/>
+        <skos:definition>Insistence on an extreme degree of order in the surrounding environment, including placement and arrangement of specific objects.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_240 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_240">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_67"/>
+        <rdfs:label>Engaging in Social Conversation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d71041"/>
+        <skos:definition>Participating in and enjoying interactions with others where the purpose is to be friendly or social, rather than expressing explicit information or needs.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_241 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_241">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_284"/>
+        <rdfs:label>Understanding the Effect of One&apos;s Actions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7100"/>
+        <skos:definition>The ability to recognize how one&apos;s own behavior affects others, including recognizing when one&apos;s behavior bothers others, or when one&apos;s behavior hurts another individual.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_243 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_243">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_283"/>
+        <rdfs:label>Social Awkwardness</rdfs:label>
+        <skos:definition>The inability to conduct oneself with ease in social situations. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_244 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_244">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_250"/>
+        <rdfs:label>Sharing in Interests of Others</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7101"/>
+        <skos:definition>Showing interest in participating in or learning about activities or topics that others express enjoyment in.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_245 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_245">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_160"/>
+        <rdfs:label>Mood</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b126"/>
+        <skos:definition>A temporary state of mind or being.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_248 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_248">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_287"/>
+        <rdfs:label>Awareness of Harmful Social Situations</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1821431"/>
+        <skos:definition>Recognizing when being treated poorly or unfairly by others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_249 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_249">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_30"/>
+        <rdfs:label>Awareness and Avoidance of Danger</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d571"/>
+        <skos:definition>Avoiding risks and potentially hazardous situations that can lead to injury or harm. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_250 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_250">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_67"/>
+        <rdfs:label>Interactions with Friends and Family</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d750"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d760"/>
+        <skos:definition>Relationships, including conversations and joint activities, with family members and friends.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_251 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_251">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_49"/>
+        <rdfs:label>Use of Everyday Household Items</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d6403"/>
+        <skos:definition>Using items in the household such as cookware, washing machines, irons, and vacuum cleaners.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_253 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_253">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_15"/>
+        <rdfs:label>Ability to Convey Information</rdfs:label>
+        <skos:definition>The ability to understand and express a variety of types of information in conversation, including reporting of events, answering questions of others, and expressing one&apos;s own thoughts and feelings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_254 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_254">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_177"/>
+        <rdfs:label>Expressive Syntax</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2183469"/>
+        <skos:definition>The ability to produce phrases and sentences according to the rules of grammar.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_255 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_255">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_176"/>
+        <rdfs:label>Receptive Syntax</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2183464"/>
+        <skos:definition>The ability to comprehend phrases and sentences according to the rules of grammar.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_257 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_257">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_284"/>
+        <rdfs:label>Empathy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D004645"/>
+        <skos:definition>An individual&apos;s objective and insightful awareness of the feelings and behavior of others, including demonstration of an awareness of and a concern for the good of others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_262 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_262">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_156"/>
+        <rdfs:label>Non-Verbal Communication</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d3350"/>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D009633"/>
+        <skos:definition>Transmission of emotions, ideas, and attitudes between individuals in ways other than the spoken language.  </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_263 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_263">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_54"/>
+        <rdfs:label>Engagement in Social Activities</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d9205"/>
+        <skos:definition>Participating in informal or casual gatherings or groups with others who have common interests. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_268 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_268">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_54"/>
+        <rdfs:label>Performance in School</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d820"/>
+        <skos:definition>Performing activities involved in obtaining an education.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_270 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_270">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:label>Working Memory</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0025265"/>
+        <skos:definition>The temporary storage and manipulation of the information necessary for such complex cognitive tasks as language comprehension, learning, and reasoning. Working memory has been found to require the simultaneous storage and processing of information.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_271 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_271">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_263"/>
+        <rdfs:label>Participation in Play Activities</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d920"/>
+        <skos:definition>Engaging in games and other recreation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_272 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_272">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_177"/>
+        <rdfs:label>Expressive Morphology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0517141"/>
+        <skos:definition>The ability to produce accurate forms of words, including the inflections that indicate the grammatical role of a word.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_273 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_273">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_177"/>
+        <rdfs:label>Expressive Lexicon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D014825"/>
+        <skos:definition>The vocabulary that an individual can produce.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_274 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_274">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_176"/>
+        <rdfs:label>Receptive Morphology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0517141"/>
+        <skos:definition>The ability to understand the structure and constituent parts of a word.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_275 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_275">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_176"/>
+        <rdfs:label>Receptive Lexicon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D014825"/>
+        <skos:definition>The vocabulary that an individual is able to understand.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_279 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_279">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_307"/>
+        <rdfs:label>Vocalizations</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0564182"/>
+        <skos:definition>Speech-like and non-speech sounds.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_28 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_28">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_67"/>
+        <rdfs:label>Keeps to Self</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0037421"/>
+        <skos:definition>Generally remaining isolated; avoiding interactions; preferring to be alone rather than with others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_283 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_283">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_153"/>
+        <rdfs:label>Interpersonal Interactions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D007398"/>
+        <skos:definition>The reciprocal interaction of two or more persons.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_284 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_284">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_283"/>
+        <rdfs:label>Interpersonal Awareness</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d710"/>
+        <skos:definition>Consciousness of contextually and socially appropriate manner, such as by showing consideration and esteem when appropriate, or responding to the feelings of others. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_287 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_287">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_66"/>
+        <rdfs:label>Awareness of Social Cues</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2371537"/>
+        <skos:definition>Giving and reacting appropriately to signs and hints that occur in social interactions. This ability can be compromised in individuals with autism spectrum disorder.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_288 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_288">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_262"/>
+        <rdfs:label>Gestures</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D005868"/>
+        <skos:definition>Movement of a part of the body for the purpose of communication.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_293 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_293">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_270"/>
+        <rdfs:label>Task Performance</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d210"/>
+        <skos:definition>Carrying out simple or complex and coordinated actions related to the mental and physical components of a single task, such as initiating a task, organizing time, space and materials for a task, pacing task performance, and carrying out, completing, and sustaining a task.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_297 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_297">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_6"/>
+        <rdfs:label>Compulsive Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D003192"/>
+        <skos:definition>Performing an act persistently and repetitively without it leading to reward or pleasure. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_299 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_299">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_30"/>
+        <rdfs:label>Decision Making Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d177"/>
+        <skos:definition>Making a choice among options, implementing the choice, and evaluating the effects of the choice, or deciding to undertake and undertaking one task from among several tasks that need to be done.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_3 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_3">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_30"/>
+        <rdfs:label>Preparing for Tasks</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2100"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2101"/>
+        <skos:definition>The ability to successfully manage arranging materials, space, or time as needed to facilitate performance of tasks.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_30 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_30">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:label>Planning</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1641"/>
+        <skos:definition>A complex operation in which a sequence of actions must be constantly monitored, re-evaluated and updated.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_301 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_301">
+        <rdfs:label>Autism Phenotype</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D002659"/>
+        <skos:definition>Severe distortions in the development of many basic psychological functions that are not normal for any stage in development. These distortions are manifested in sustained social impairment, speech abnormalities, and peculiar motor movements.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_304 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_304">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_15"/>
+        <rdfs:label>Ability to Converse in Social Settings</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d350"/>
+        <skos:definition>The ability to participate in and contribute to friendly and casual conversations with others in a contextually and socially appropriate manner, including asking questions relevant to the conversational topic.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_306 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_306">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_253"/>
+        <rdfs:label>Ability to Convey Correct Information</rdfs:label>
+        <skos:definition>The ability to understand and express accurate and relevant information during conversations, such as correctly answering questions of others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_307 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_307">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_177"/>
+        <rdfs:label>Expressive Phonology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D013061"/>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D013065"/>
+        <skos:definition>The ability to produce sounds according to the sound patterns of language.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_310 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_310">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_60"/>
+        <rdfs:label>Recognition and Responsiveness to Voice</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d3100"/>
+        <skos:definition>Awareness of someone&apos;s voice when another individual begins speaking, and ability to turn, locate and focus on voice, including responding when name is called.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_312 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_312">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_284"/>
+        <rdfs:label>Understanding Others&apos; Expectations</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d2503"/>
+        <skos:definition>The ability to understand obligations and accountability assumed in formal and informal relationships with others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_319 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_319">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_140"/>
+        <rdfs:label>Distant or Preoccupied Affect</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233484"/>
+        <skos:definition>Appearing unemotional, unresponsive, or disconnected from one&apos;s physical environment.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_32 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_32">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_753"/>
+        <rdfs:label>Fine Motor Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0678857"/>
+        <skos:definition>The small movements of the hands, wrists, fingers, feet, toes, lips, and tongue. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_321 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_321">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_54"/>
+        <rdfs:label>Adherence to Rules in the Community</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0562410"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0562415"/>
+        <skos:definition>Understanding and obeying rules and laws when in the broader community.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_322 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_322">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_49"/>
+        <rdfs:label>Adherence to Rules in the Home</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0562410"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0562415"/>
+        <skos:definition>Understanding and obeying rules that have been determined for appropriate behavior within the household. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_324 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_324">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_176"/>
+        <rdfs:label>Receptive Phonology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b2304"/>
+        <skos:definition>The ability to recognize and understand language sounds.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_327 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_327">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_235"/>
+        <rdfs:label>Restricted Range of Interests</rdfs:label>
+        <skos:definition>Possessing a narrow range of interests in objects or topics.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_328 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_328">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_235"/>
+        <rdfs:label>Intense Interests</rdfs:label>
+        <skos:definition>Extremely strong interest in specific objects or topics.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_329 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_329">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_140"/>
+        <rdfs:label>Showing Emotion</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0455212"/>
+        <skos:definition>Showing outward display of emotions that can be perceived by others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_332 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_332">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_262"/>
+        <rdfs:label>Facial Expressions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D005149"/>
+        <skos:definition>Observable changes of expression in the face in response to emotional stimuli.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_34 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_34">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_753"/>
+        <rdfs:label>Gross Motor Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0678858"/>
+        <skos:definition>Skills that involve the large muscle groups, including movements of the arms, legs, feet, or the entire body.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_344 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_344">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_96"/>
+        <rdfs:label>Managing Internal Emotions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1521"/>
+        <skos:definition>The ability to control and appropriately manage emotional responses when under stress.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_348 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_348">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_54"/>
+        <rdfs:label>Job Performance</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d845"/>
+        <skos:definition>Quality of the work conducted at one&apos;s place of employment.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_356 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_356">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_253"/>
+        <rdfs:label>Ability to Convey Feelings</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1821397"/>
+        <skos:definition>The ability to understand and accurately express information regarding one&apos;s own thoughts, opinions, and feelings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_357 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_357">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_30"/>
+        <rdfs:label>Use of Free Time</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0517871"/>
+        <skos:definition>Engaging in any form of play, recreational, or leisure activity.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_360 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_360">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_177"/>
+        <rdfs:label>Expressive Semantics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0564246"/>
+        <skos:definition>The ability to produce phrases, sentences, or sets of sentences that successfully convey meaning.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_368 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_368">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_529"/>
+        <rdfs:label>Flexibility in Problem Solving</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1643"/>
+        <skos:definition>The ability to change strategies, or shift mental sets, when involved in problem-solving.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_37 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_37">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_250"/>
+        <rdfs:label>Engaging in Social Play</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d9200"/>
+        <skos:definition>Participating in and enjoying structured and unstructured games and spontaneous recreation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_370 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_370">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_529"/>
+        <rdfs:label>Sorting Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0237886"/>
+        <skos:definition>The ability to sort objects in different ways as instructed, including sorting the same objects multiple times by different rules.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_39 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_39">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_11"/>
+        <rdfs:label>Imagination</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0010297"/>
+        <skos:definition>The ability to perceive new relationships and to derive new ideas and solve problems by pursuing nontraditional patterns of thinking.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_4 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_4">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:label>IQ</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D007360"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0456149"/>
+        <skos:definition>The ability to learn and to deal with new situations and to deal effectively with tasks involving abstractions. The relative intelligence of an individual is expressed as a score on a standardized test of intelligence.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_41 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_41">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_42"/>
+        <rdfs:label>Aggressive Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D000374"/>
+        <skos:definition>Behavior which may be manifested by destructive and attacking action which is verbal or physical, by covert attitudes of hostility or by obstructionism.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_42 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_42">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_66"/>
+        <rdfs:label>Intentional Bad Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0474416"/>
+        <skos:definition>Deliberate engagement in disruptive or improper behavior. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_43 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_43">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_168"/>
+        <rdfs:label>Tics and Mannerisms</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D020323"/>
+        <skos:definition>Habitual, repeated, rapid contraction of certain muscles, resulting in stereotyped individualized actions that can be voluntarily suppressed for only brief periods. They tend to be aggravated by emotional stress.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_45 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_45">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_189"/>
+        <rdfs:label>Regression of Language Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1843016"/>
+        <skos:definition>Loss of language ability after some language has already been acquired.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_47 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_47">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_6"/>
+        <rdfs:label>Adherence to Rituals and Routines</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C1837653"/>
+        <skos:definition>Intolerance for deviation from routine, or Insistence on a specific order.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_49 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_49">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_538"/>
+        <rdfs:label>Home Life Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d6"/>
+        <skos:definition>Carrying out domestic and everyday actions and tasks, including adhering to household rules, caring for one&apos;s self and one&apos;s possessions, and performing household tasks.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_50 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_50">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_174"/>
+        <rdfs:label>Clothing Self</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d540"/>
+        <skos:definition>Carrying out the coordinated actions and tasks of putting on and taking off clothes and footwear in sequence and in keeping with climatic and social conditions. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_52 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_52">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_174"/>
+        <rdfs:label>Eating Ability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d550"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d560"/>
+        <skos:definition>Indicating need for, and carrying out the coordinated tasks and actions of eating food that has been served or taking hold of a drink, bringing it to the mouth and consuming it in culturally acceptable ways. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_529 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_529">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:label>Mental Flexibility</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1643"/>
+        <skos:definition>The ability to shift to a different thought or action according to a change in situation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_53 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_53">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_174"/>
+        <rdfs:label>Hygiene</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d510"/>
+        <skos:definition>Maintaining personal cleanliness.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_531 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_531">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_155"/>
+        <rdfs:label>Response Inhibition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D007266"/>
+        <skos:definition>The interference with or prevention of a behavioral or verbal response even though the stimulus for that response is present.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_532 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_532">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_49"/>
+        <rdfs:label>Performance of Household Tasks</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d630-d649"/>
+        <skos:definition>Performing tasks necessary for the general management and upkeep of a household, including completing chores and preparing food.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_534 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_534">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_15"/>
+        <rdfs:label>Sensitivity to Conversant</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d3503"/>
+        <skos:definition>Observant of other participant in conversation, such as recognizing if other participant appears bored, not changing the topic of conversation if others are not interested, and not interrupting others in conversation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_535 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_535">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_176"/>
+        <rdfs:label>Receptive Semantics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2183464"/>
+        <skos:definition>The ability to understand language meaning.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_538 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_538">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_153"/>
+        <rdfs:label>Adaptive Life Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0085880"/>
+        <skos:definition>Everyday skills that are needed at home and in the community.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_54 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_54">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_538"/>
+        <rdfs:label>Community Life Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d8"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d9"/>
+        <skos:definition>Skills that allow successful engagement in all aspects of community social life, such as engaging in organized groups, recreation, and citizenship. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_545 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_545">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_538"/>
+        <rdfs:label>Regression of General Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2748611"/>
+        <skos:definition>Loss or decline of abilities or skills that have already been learned.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_547 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_547">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_67"/>
+        <rdfs:label>Social Dependence on Others</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0011548"/>
+        <skos:definition>Requiring a high degree of attention from others, including being unable to act appropriately when left alone by caregiver.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_56 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_56">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_174"/>
+        <rdfs:label>Toileting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d530"/>
+        <skos:definition>Planning and carrying out the appropriate elimination of human waste and cleaning oneself afterwards.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_57 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_57">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_168"/>
+        <rdfs:label>Reaction to Sensory Stimuli</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D012684"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0854080"/>
+        <skos:definition>Extreme sensitivity to external stimuli such as noises, bright lights, smells and textures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_579 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_579">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_304"/>
+        <rdfs:label>Using Language Appropriately</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0582167"/>
+        <skos:definition>Using language according to the social conventions that govern conversational interactions, including being able to interpret speakers&apos; intended meanings across a variety of social contexts.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_58 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_58">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_162"/>
+        <rdfs:label>Self-Injurious Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D016728"/>
+        <skos:definition>Behavior in which persons intentionally hurt or harm themselves. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_581 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_581">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_263"/>
+        <rdfs:label>Participation in Athletic Activities</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d9201"/>
+        <skos:definition>Engaging in competitive and informal or formally organized games or athletic events, performed alone or in a group.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_6 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_6">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_166"/>
+        <rdfs:label>Restricted and Repetitive Behavior</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2675334"/>
+        <skos:definition>Atypical behavior that involves both display of unusual or intense interests, and atypical movements such as hand flapping, finger movements, rocking or twirling.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_60 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_60">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_283"/>
+        <rdfs:label>Reciprocal Social Interaction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d730"/>
+        <skos:definition>Mutual actions and communicative exchanges among people in social settings.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_61 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_61">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_60"/>
+        <rdfs:label>Imitation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d130"/>
+        <skos:definition>Mimicking or copying the movements of other individuals as a means of interaction and play as well as to learn by modeling the actions and behaviors of others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_62 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_62">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_60"/>
+        <rdfs:label>Joint Attention</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1403"/>
+        <skos:definition>Sharing attentional focus with others between objects or events.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_64 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_64">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_304"/>
+        <rdfs:label>Ability to Engage in Casual Conversation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d3501"/>
+        <skos:definition>The ability to maintain casual interactions with others such as chatting and small talk, in a contextually and socially appropriate manner.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_66 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_66">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_153"/>
+        <rdfs:label>Recognition of Social Norms</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0237750"/>
+        <skos:definition>Awareness of rules for social conduct, or standards which comprise a cultural definition of desirable or acceptable behavior. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_67 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_67">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_283"/>
+        <rdfs:label>Social Interest</rdfs:label>
+        <skos:definition>Actively seeking out interactions with others. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_724 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_724">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_753"/>
+        <rdfs:label>Functional Laterality</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D007839"/>
+        <skos:definition>Behavioral manifestations of cerebral dominance in which there is preferential use and superior functioning of either the left or the right side, as in the preferred use of the right hand or right foot.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_75 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_75">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_307"/>
+        <rdfs:label>Prosody</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D013065"/>
+        <skos:definition>The ability to produce the appropriate rhythm, stress, and intonation of speech. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_753 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_753">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_152"/>
+        <rdfs:label>Motor Skills</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D009048"/>
+        <skos:definition>The performance of complex motor acts that involve the movement of muscles in the body.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_755 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_755">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_158"/>
+        <rdfs:label>Visual Perception</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0042830"/>
+        <skos:definition>Mental functions involved in discriminating shape, size, color and other ocular stimuli. Many individuals with autism spectrum disorder show superior perceptual skills relative to the general population.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_756 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_756">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_755"/>
+        <rdfs:label>Space Perception</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D013028"/>
+        <skos:definition>The awareness of the spatial properties of objects; including physical space.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_757 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_757">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_755"/>
+        <rdfs:label>Color Perception</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.bioontology.org/ontology/MSH/D003118"/>
+        <skos:definition>Mental processing of chromatic signals from the eye by the visual cortex where they are converted into symbolic representations. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_76 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_76">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_54"/>
+        <rdfs:label>Money Management</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d860-d879"/>
+        <skos:definition>Using and saving money responsibly.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_8 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_8">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_165"/>
+        <rdfs:label>Reasoning</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0684328"/>
+        <skos:definition>Thinking that is coherent and logical, involving ability to follow instructions as well as problem solving ability.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_82 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_82">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_66"/>
+        <rdfs:label>Regard for Customs and Manners</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7203"/>
+        <skos:definition>Recognizing and adhering to social conventions governing oneself and one&apos;s behavior in public and around others. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_85 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_85">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_67"/>
+        <rdfs:label>Initiating and Responding to Social Overtures</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d7104"/>
+        <skos:definition>Showing interest in making social advances to initiate friendly interactions as well as positive responses to the social advances of others.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_87 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_87">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_532"/>
+        <rdfs:label>Preparation of Food</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d630"/>
+        <skos:definition>Planning, organizing, cooking and serving simple and complex meals for oneself and others. </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_88 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_88">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_11"/>
+        <rdfs:label>Visual Thinking</rdfs:label>
+        <skos:definition>Apprehending some aspect of an object or situation, through primarily visual-spatial mental functions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_9 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_9">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_8"/>
+        <rdfs:label>Understanding Logical Progression</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0233630"/>
+        <skos:definition>Understanding how logically connected events relate to each other, such as understanding connections and order in a sequence.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_90 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_90">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_85"/>
+        <rdfs:label>Responsiveness to Social Advances</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C2111895"/>
+        <skos:definition>Reacting positively by attempts of others to initial social interaction.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_92 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_92">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_270"/>
+        <rdfs:label>Attention and Focus</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b140"/>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=d160"/>
+        <skos:definition>The ability to focus on an external stimulus or internal experience for the required period of time, including intentionally focusing on specific stimuli, such as by filtering out distracting noises.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_93 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_93">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_250"/>
+        <rdfs:label>Sharing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0237876"/>
+        <skos:definition>Offering and allowing others to use possessions, such as letting another child play with one&apos;s own toys.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_96 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_96">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_162"/>
+        <rdfs:label>Control of Emotional Reactions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://bioportal.bioontology.org/ontologies/45578?p=terms&amp;conceptid=b1521"/>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0871727"/>
+        <skos:definition>The ability to control and appropriately manage the experience and display of emotions in response to external stimuli.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Class_99 -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_99">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_283"/>
+        <rdfs:label>Social Anxiety</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://www.nlm.nih.gov/research/umls?cui=C0424166"/>
+        <skos:definition>Apprehension or fear of social interaction or social situations in general.  </skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Color -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Color">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_757"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Interaction_type -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_32"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Pattern -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Pattern">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_161"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Shape -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Shape">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_226"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Size -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Size">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_756"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Texture -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Texture">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_57"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Themes -->
+
+    <owl:Class rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Themes">
+        <rdfs:subClassOf rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_328"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Animals -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Animals">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Themes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Black -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Black">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Blue -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Blue">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Circle -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Circle">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Dinasour -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Dinasour">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Shape"/>
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Themes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Dotted -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Dotted">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Drag -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Drag">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Extra_Large -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Extra_Large">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Flower -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Flower">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Shape"/>
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Themes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Flowy -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Flowy">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Texture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Green -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Green">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#High -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#High">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_92"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Large -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Large">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Low -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Low">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_92"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Medium">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Mid -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Mid">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_92"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Negative -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Negative">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Neutral -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Neutral">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#None -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#None">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_92"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Pixelated -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Pixelated">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Positive -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Positive">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Class_245"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Red -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Red">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Rotate -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Rotate">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Rough -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Rough">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Texture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Slide -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Slide">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Small -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Small">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Size"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Smooth -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Smooth">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Texture"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Spiral -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Spiral">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Square -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Square">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Striped -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Striped">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Tap -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Tap">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Interaction_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Triangle -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Triangle">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Vehicle -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Vehicle">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Themes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#White -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#White">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cbmi.med.harvard.edu/asdphenotype#Yellow -->
+
+    <owl:NamedIndividual rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Yellow">
+        <rdf:type rdf:resource="http://cbmi.med.harvard.edu/asdphenotype#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://cbmi.med.harvard.edu/asdphenotype#Class_21">
+        <question_id>4500069</question_id>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
